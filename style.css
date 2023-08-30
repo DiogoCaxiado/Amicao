@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    background-color:#1950DE;
+}
+
+.button-hamburguer {
+    width: 60px;
+    border: none;
+    background-color: transparent;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #FFF;
+    
+    margin: 0 14px;
+}
+
+#user {
+    display: none;
+}
+
+#lupa-desktop {
+    display: flex;
+    position: relative;
+}
+
+#lupa-desktop {
+    display: none;   
+}
+
+h1 {
+    font-family: Mochiy Pop P One;
+    font-size: 36px;
+    margin: 0 14px;
+    
+    color: #FFF;
+}
+
+#header-bottom {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 50px;
+
+    background-color: #3F6BDD;
+}
+
+#header-bottom img {
+    width: 25px;
+    height: 25px;
+    margin: 0 18px;
+}
+
+#header-bottom nav{
+    display: none;
+}
+
+#container-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lupa-mobile {
+    position: relative;
+    margin: 20px 0;
+}
+
+.material-icons {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+
+    color: #1950DE;
+}
+
+#lupa-mobile input{
+    width: 362px;
+    height: 50px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    color: rgba(25, 80, 222, 0.80);
+}
+
+#lupa-mobile input::placeholder {
+    padding: 0 60px;
+    
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+.container-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-products h2 {
+    margin: 0 24px;
+
+    font-family: Poppins;
+    font-size: 20px;
+    
+    color: #000;
+}
+
+.position-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    margin: 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 200px;
+    height: 324px;
+    
+    border-radius: 15px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 80px;
+}
+
+.card p {
+    width: 80%;
+
+    font-family: Poppins;
+    font-size: 12px;
+
+    color: #000;
+}
+
+.container-statistic {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.stars img{
+    width: 12px;
+}
+
+#follow {
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+}
+
+#follow-icons {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+}
+
+#follow-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+p {
+    font-family:'poppins',sans-serif;
+    
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 80px;
+    background-color: #1950DE;
+}
+
+#links {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .container-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #user {
+        display: flex;
+        gap: 14px;
+        margin: 0 14px;
+    }
+
+    .button-hamburguer {
+        display: none;
+    }
+    
+    #user img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    #user a {
+        font-family: Mochiy Pop One;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        
+        color: #FFF;
+    }
+
+    h1 {
+        margin: 0 17px;
+    }
+
+    #lupa-desktop {
+        display: flex;
+
+        width: 180px;
+        height: 40px;
+    
+        border-radius: 15px;
+        background-color: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+        color: rgba(25, 80, 222, 0.80);
+    }
+
+    #lupa-desktop i {
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+
+    #lupa-desktop input {
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+
+    #lupa-desktop input::placeholder {
+        font-family: Poppins;
+        padding: 0 50px;
+        font-size: 14px;
+    }
+
+    #header-bottom {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    #header-bottom nav {
+        display: flex;
+        gap: 105px;
+        margin: 0 190px;
+    }
+
+    #header-bottom a {
+        text-decoration: none;
+        font-family: Mochiy Pop P One;
+        font-size: 20px;
+        
+        color: #FFF;
+    }
+
+    #header-bottom img {
+        margin: 0 54px;
+    }
+
+
+    #lupa-mobile {
+        display: none;
+    }
+
+    footer {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 15px;
+    }
+
+    #links {
+        display: flex;
+        gap: 14px;
+        margin: 0 60px;
+    }
+
+    #links a {
+        text-decoration: none;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 600;
+
+        color: #FFF;
+    }
+
+    #follow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #follow h3 {
+        font-family: Poppins;
+        font-size: 20px;
+        
+        color: #FFF;
+    }
+
+    #follow-icons {
+        margin: 0 60px;
+    }
+}
